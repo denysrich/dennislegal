@@ -1,26 +1,28 @@
-body { font-family: sans-serif; margin: 0; background: #f4f4f4; }
-.container { width: 90%; margin: auto; overflow: hidden; }
+/* MODULE 1: style.css */
+body { font-family: 'Roboto', sans-serif; margin: 0; padding: 0; background-color: #f4f7f6; color: #333; }
+.container { width: 85%; margin: auto; overflow: hidden; }
 
-/* Header & Nav */
-header { background: #003366; color: white; padding: 20px; text-align: center; }
-nav { background: #333; padding: 10px; text-align: center; }
-nav a { color: white; text-decoration: none; padding: 10px; margin: 5px; display: inline-block; }
-nav a:hover { background: #d4af37; }
+/* Header & Navigation */
+header { background: #0b1c3c; color: white; padding-top: 30px; min-height: 70px; border-bottom: 5px solid #d4af37; }
+header h1 { text-align: center; text-transform: uppercase; margin: 0; letter-spacing: 2px; }
+
+nav { background: #0b1c3c; text-align: center; padding: 15px 0; }
+nav a { color: white; text-decoration: none; font-weight: bold; font-size: 16px; margin: 0 15px; }
+nav a:hover, nav a.active { color: #d4af37; }
 
 /* Hero Section */
 #showcase {
-    /* FIXED: Correct path and filename for your background */
-    background: url('images/hero.png.jpg') no-repeat center center/cover;
-    height: 400px;
-    color: white;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    /* FIXED: Matches your specific double-extension file */
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('images/hero.png.jpg') no-repeat center center/cover;
+    min-height: 400px;
+    text-align: center; color: white; display: flex; flex-direction: column; justify-content: center;
 }
-#showcase h1 { font-size: 50px; margin: 0; text-shadow: 2px 2px 5px black; }
+#showcase h1 { font-size: 50px; margin-bottom: 10px; }
 
-/* Features */
-.features { display: flex; gap: 20px; margin-top: 20px; }
-.card { background: white; padding: 15px; text-align: center; width: 33%; box-shadow: 0 0 5px #ccc; }
-.card img { width: 100%; height: 200px; object-fit: cover; }
+/* Main Content & Images */
+#main-content { padding: 40px 0; background: white; margin-top: 20px; }
+.service-img { width: 100%; height: 300px; object-fit: cover; border-bottom: 4px solid #d4af37; margin-bottom: 20px; }
+
+/* Buttons & Footer */
+button { background: #d4af37; color: white; border: 0; padding: 10px 20px; font-size: 18px; cursor: pointer; }
+footer { background: #0b1c3c; color: white; text-align: center; padding: 20px; margin-top: 40px; }
